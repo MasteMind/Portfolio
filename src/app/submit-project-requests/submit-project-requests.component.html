@@ -1,0 +1,69 @@
+<div class="container">
+	<form (ngSubmit)="onSubmit()" #projectRequestForm="ngForm" [hidden]="submitted">
+		<div class="form-group">
+			<label for="title">Title</label>
+			<input type="text" id="title" class="form-control" [(ngModel)]="model.title" name="title" required #title="ngModel">
+				<div [hidden]="title.valid || title.pristine"
+				     class="alert alert-danger">
+				  Title is required
+				</div>
+		</div>
+
+		<div class="form-group">
+			<label for="description">Description</label>
+			<input type="textarea" id="description" class="form-control" [(ngModel)]="model.descrition" name="description" required #description="ngModel">
+				<div [hidden]="description.valid || description.pristine"
+				     class="alert alert-danger">
+				  Description is required
+				</div>
+		</div>
+
+		<div class="form-group">
+			<label for="technologyStack">Technology Stack</label>
+			<select id="technologyStack" class="form-control" required>
+				<option *ngFor="let technology of technologyStack" [value]="technology">{{technology}}</option>
+			</select>
+		</div>
+
+		<div class="form-group">
+			<label for="expectedTimeline">Expected Timeline</label>
+			<input type="text" id="expectedTimeline" class="form-control" required/>
+		</div>
+
+		<div class="form-group">
+			<label for="budget">Budget</label>
+			<input type="text" id="budget" class="form-control" required/>
+		</div>
+
+		<button type="button" class="btn btn-default" (click)="newProjectRequest(); projectRequestForm.reset()">Reset</button>
+		<button type="submit" class="btn btn-success" [disabled]="!projectRequestForm.form.valid">Preview Request</button>
+	</form>
+
+	<div [hidden]="!submitted">
+		<h2>You submitted the following:</h2>
+		<div class="row">
+			<div class="col-xs-3">Title</div>
+			<div class="col-xs-9  pull-left">{{ model.title }}</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-3">Description</div>
+			<div class="col-xs-9  pull-left">{{ model.description }}</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-3">Technology Stack</div>
+			<div class="col-xs-9  pull-left">{{ model.technologyStack }}</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-3">Expected Timeline</div>
+			<div class="col-xs-9  pull-left">{{ model.expectedTimeline }}</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-3">Budget</div>
+			<div class="col-xs-9  pull-left">{{ model.budget }}</div>
+		</div>
+		<br>
+		<button class="btn btn-primary" (click)="submitted=false">Edit</button>
+		<button class="btn btn-primary" (click)="submitProjectRequest()">Submit Request</button>
+
+	</div>
+</div>

@@ -1,0 +1,158 @@
+{
+	"pageData": {
+		"menuList" : [
+			{"key":"Current Responsibilities","value":"currentDesignation"},
+			{"key":"Education","value":"education"},
+			{"key":"Past Ventures","value":"pastVentures"},
+			{"key":"Achievements","value":"achievements"},
+			{"key":"Skill Set","value":"skillSet"},
+			{"key":"Projects Worked On","value":"projectsWorkedOn"},
+			{"key":"Currently Working On","value":"currentlyWorkingOn"},
+			{"key":"Submit Project Request","value":"submitProjectRequest"},
+			{"key":"Request For Classes","value":"requestForClasses"}
+		],
+		"currentPosition" : [
+			{
+				"title":"",
+				"tableHeaders":["Functionality","Description","Technology Stack"],
+				"tableDetails":[
+					["Cash Transactions", "Dealing with huge file sizes", "JavaNIO, Struts2, JQuery, JavaScript, Batch"],
+					["Common Verification Services", "Api Gateway", "JAX-WS, Soap, Apache CXF"],
+					["MIS Reports", "JQuery Report Architecture for generating high quality and efficient reports from a huge amount of data", "Java, JQuery, JavaScript, Oracle SQL"],
+					["Spring REST api for an Android Client", "Designed and Developed the complete Architecture", "Spring REST, JPA, Hibernate, AspectJ, PostMan, Jackson"]
+				],
+				"samples":["assets/MIS_Sample_1.png","assets/MIS_Sample_2.png","assets/MIS_Sample_3.png"]
+			}
+		],
+		"education": [
+			{
+				"title":"Bachelors of Engineering (B.E.)",
+				"subTitle" : "Computer Science",
+				"university" : "Rungta College of Engineering and Technology",
+				"place" : "Durg, Chhattisgarh, India",
+				"year" : "2015",
+				"marks" : "72.0%",
+				"achievements":[
+					"Ranked within top 100 for CodeNation (National Level Hackathon organised by HackerRank)",
+					""
+				]
+			},
+			{
+				"title":"ISC XII",
+				"subTitle" : "Science and Computer Applications",
+				"university" : "St. Xavier's Senior Secondary School",
+				"place" : "Durg, Chhattisgarh, India",
+				"year" : "2011",
+				"marks" : "80.0%",
+				"achievements":[
+					"As a School President, I was responsible for leading the students' council and organizing many events. Being a good athlete, decent orator, and passionate coder, helped me in guiding other students too.",
+					""
+				]
+			},
+			{
+				"title":"ICSE X",
+				"subTitle" : "Science and Computer Applications",
+				"university" : "St. Xavier's Senior Secondary School",
+				"place" : "Durg, Chhattisgarh, India",
+				"year" : "2009",
+				"marks" : "82.0%",
+				"achievements":[""]
+			}
+		],
+		"pastVentures" : [
+			{
+				"title":"Assistant System Engineer at Tata Consultancy Services Ltd.",
+				"duration":"January'2016 to Present",
+				"description":"I joined TCS, as a fresher in the year 2016. I had the designation of Assistant System Engineer Trainee, at the time of my joining. My initial learning program was organised in Ahemadabad, Gujarat, where we had a two month long training on Java. I including some of my other batch mates, were already quite proficient in Java. This lead us to us working on a challenge/competition within the organisatinon. The challenge was for building an API Gateway based service, and we were able to win it. As a result, we got an API Proficiency Badge. After the training, I was allocated to Bangalore (which was my first choice). In Bangalore, I got in to the e-Filing project. It is one of the powerhouses of India, responsible for handling huge traffics, along with maintaining the right and secure data flow. Within this project I got to learn a lot, including the facets of an organisation. When you talk about a product, it is not just one website, or some desktop utility, it is the whole architecture that connects everything and then serves to the user the right thing at the right time. Here I learned a lot during the initial phase of my career."
+			},
+			{
+				"title":"Intern at Lets Endorse",
+				"duration":"November'2015 to December'2015",
+				"description":"I joined Lets Endorse, as an intern back in November 2015. At the time, I had just learned some basics of Ruby on Rails, and they needed some RoR work to be done. Somehow, they agreed to have me as an intern and to have me work on some part of an already build project. My job was to improve the functionality of a website builder. I was able to deliver, what we had agreed for the upgrades to be, much earlier in the timeline than promised. It was a first time experience, and sincere thanks to all my colleagues there for having me. They taught and showed me what the startup culture of Bangalore is, and how things actually start from the scratch."
+			}
+		],
+		"achievements" : [
+			{
+				"title":"On the Spot Award",
+				"duration":"2017",
+				"description":"Received On the Spot Award for quick and efficient delivery of a critical requirement in the e-Filing project of TCS"
+			},
+			{
+				"title":"API Star Award",
+				"duration":"2016",
+				"description":"Received the API Star Award in TCS ILP for winning a competition based on developing API Gateway"
+			},
+			{
+				"title":"Paper on Quantum Computers",
+				"duration":"2015",
+				"description":"Presented a paper on Quantum Computers in Impulse at Rungta College Of Engineering and Technology, Bhilai"
+			},
+			{
+				"title":"Campus Ambassador - HackerRank",
+				"duration":"2015",
+				"description":"I was selected as the Campus Ambassador of Rungta College Of Engineering and Technology, Bhilai for HackerRank"
+			}
+		],
+		"skillSets" : [
+			{
+				"title":"Web Development",
+				"tableHeaders":["Name","Description","Implementations"],
+				"tableDetails":[
+					["Java Spring REST API", "Building a REST API is not a trivial task – from the high level RESTful constraints down to the the nitty-gritty of making everything work and work well.  Spring has made REST a first class citizen back with the 3.0 release and the platform has been maturing in leaps and bounds since then. With the Spring 4.0 release, REST is now battle hardened and fully mature","A REST based API, for serving data to an Android Client. It incorporates Google's SafetyNet APIs for securely verifying the clients, before tranfering any sensitive data."],
+					["Java Struts2 MVC", "Apache Struts is a free, open-source, MVC framework for creating elegant, modern Java web applications. It favors convention over configuration, is extensible using a plugin architecture, and ships with plugins to support REST, AJAX and JSON.", "A web portal, to perform a certain task. It handles a huge amount of traffic, and at the same time, enable seamless working for its customers."],
+					["Java Spark", "Spark Framework is a simple and expressive Java/Kotlin web framework DSL built for rapid development. Sparks intention is to provide an alternative for Kotlin/Java developers that want to develop their web applications as expressive as possible and with minimal boilerplate. With a clear philosophy Spark is designed not only to make you more productive, but also to make your code better under the influence of Spark’s sleek, declarative and expressive syntax.", "The contents you see here are being served by a Java Spark API."],
+					["Java Batch", "Back End processing of huge amounts of data, that needs to be processed in batches", "A task that involved processing of files of huge sizes and storing the data into the database."],
+					["Angular2", "Angular JS is an open source framework built over JavaScript. It was built by the developers at Google. This framework was used to overcome obstacles encountered while working with Single Page applications. Also, testing was considered as a key aspect while building the framework. It was ensured that the framework could be easily tested. The initial release of the framework was in October 2010.", "The current profile that you see, is built using Angular2"],
+					["ReactJS", "Designed and Developed the complete Architecture", "Spring REST, JPA, Hibernate, AspectJ, PostMan, Jackson"]
+				],
+				"samples":["assets/MIS_Sample_1.png","assets/MIS_Sample_2.png","assets/MIS_Sample_3.png"]
+			},
+			{
+				"title":"Mobile Development",
+				"tableHeaders":["Name","Description","Implementations"],
+				"tableDetails":[
+					["Android Native", "Dealing with huge file sizes", "JavaNIO, Struts2, JQuery, JavaScript, Batch"]
+				],
+				"samples":["assets/MIS_Sample_1.png","assets/MIS_Sample_2.png","assets/MIS_Sample_3.png"]
+			},
+			{
+				"title":"Operations",
+				"tableHeaders":["Name","Description","Implementations"],
+				"tableDetails":[
+					["Amazon AWS", "Dealing with huge file sizes", "JavaNIO, Struts2, JQuery, JavaScript, Batch"],
+					["Linux Server", "Api Gateway", "JAX-WS, Soap, Apache CXF"]
+				],
+				"samples":["assets/MIS_Sample_1.png","assets/MIS_Sample_2.png","assets/MIS_Sample_3.png"]
+			},
+			{
+				"title":"Data Science",
+				"tableHeaders":["Name","Description","Implementations"],
+				"tableDetails":[
+					["R", "Dealing with huge file sizes", "JavaNIO, Struts2, JQuery, JavaScript, Batch"],
+					["Python Conda", "Api Gateway", "JAX-WS, Soap, Apache CXF"]
+				],
+				"samples":["assets/MIS_Sample_1.png","assets/MIS_Sample_2.png","assets/MIS_Sample_3.png"]
+			}
+		],
+		"projectsWorkedOn" : [
+			{
+				"title":"Visiting Card",
+				"description":"A dynamic visiting card made using ReactJS with HTML5/CSS. The card employs fast rendering of ReactJS combined with the simplicity of HTML/CSS. It is also interactive as it revolves around as the user hovers over it. The front side features a basic overview of the developer(me), while the rear side contains a list of proficiencies.",
+				"link":"https://MasteMind.GitHub.io"
+			},
+			{
+				"title":"Portfolio",
+				"description":"A _ portofolio of the developer(me), build using Angular2. It is a Single Page Application, with further sub-sections, each responsible for their own content. The contents are all dynamic and stored away in a local JSON. Later on this will be replaced by a Web-Service.",
+				"link":"https://localhost:4200"
+			}
+		],
+		"currentlyWorkingOn": [{
+			"title":"Title",
+			"description":"Description",
+			"link":"Link",
+			"references":"References",
+			"contribution":"Contribution",
+			"documentations":"Documentations"
+		}]
+	}
+}

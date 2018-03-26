@@ -1,0 +1,150 @@
+#introduction {
+	height: 621px;
+}
+
+.introductionFixedHeight {
+	height: 150px !important;
+}
+
+.hidden {
+  opacity:0;
+  transition:opacity 1s linear;
+  height:0px;
+}
+
+#bannerContainer {
+	width: 100%;
+	height: 500px;
+	position: relative;
+	overflow-y:hidden;
+}
+
+#header {}
+
+.logoHeading {
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	display: block;
+}
+
+.logoHeadingSecondary {
+    width: 40%;
+    color: white;
+    margin-top: -175px;
+    margin-left: 35%;
+}
+
+.transform {
+  -webkit-transition: all 2s ease;  
+  -moz-transition: all 2s ease;  
+  -o-transition: all 2s ease;  
+  -ms-transition: all 2s ease;  
+  transition: all 2s ease;
+}
+
+#banner {
+	width: inherit;
+	overflow: hidden;
+	z-index:-1;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.bannerSecondary {
+	height:200px !important;
+}
+
+#bannerSecondary {
+	width: inherit;
+	overflow: hidden;
+	z-index:-1;
+}
+
+#profilePic {
+	border-radius: 4px;
+	border: 4px white;
+	border-style: solid;
+	margin: auto;
+	overflow: hidden;
+	z-index:1;
+	position: absolute;
+	height:200px;
+	width:200px;
+	top: 61%;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+}
+
+#profilePicImg {
+	height: inherit;
+	widows: inherit;
+}
+
+#introduction {
+	text-align: center;
+}
+
+#bannerImg {
+	width: inherit;
+}
+
+#bannerImgSecondary {
+	margin-top: -620px;
+	width: inherit;
+	overflow: hidden;
+}
+
+.profileHeadRow {
+    margin-top: -150px;
+    margin-left: 30px;
+    padding: 10px;
+}
+
+.profilePicSecondary {
+	height:130px !important;
+	width:130px !important;
+	top: 10% !important;
+	left: -40% !important;
+}
+
+#introductionSecondary, #introductionSecondary>h1>a {
+	color: white !important;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+.navbar-nav {
+  margin: auto;
+}
+
+
+a {
+	text-decoration:none;
+}
+
+@media (max-width: 600px) {
+	#profilePic {
+		height:100px;
+		width:100px;
+		margin-top: -375px;
+	}
+	h1 {
+		font-size: 1.8rem;
+	}
+	h4 {
+		font-size: 1.12rem;
+	}
+	h5 {
+		font-size: 0.93rem
+	}
+}
+
+@media (max-width:1024px) {
+}

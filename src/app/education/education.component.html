@@ -1,0 +1,28 @@
+<div class="container">
+<div *ngFor="let detail of educationDetails">
+	<h5> {{detail.title}}</h5>
+	
+	<table class="table" style="width:100%">
+		<tbody>
+			<tr>
+				<td width="75%">
+					{{detail.university}}<br/>
+					{{detail.subTitle}}<br/>
+					{{detail.place}}<br/>
+					{{detail.year}}<br/>
+				</td>
+				<td align="right">{{detail.marks}}</td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="overflowX">
+		<table *ngIf="detail.samples">
+			<tr>
+				<td *ngFor="let sample of detail.samples">
+					<img src="{{sample}}" alt="Sample Screenshots" class="sampleImg"/>
+				</td>
+			</tr>
+		</table>
+	</div>
+</div>
+</div>

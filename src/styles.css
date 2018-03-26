@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+.table {
+    width: 100%;	
+}
+
+.table thead th {
+	text-align: center;
+}
+
+.overflowX {
+	overflow-x: auto;
+}
+
+.content {
+	padding-top: 15px;
+}

@@ -1,0 +1,27 @@
+<div class="container">
+<div *ngFor="let detail of currentPositionDetails">
+	<h6> {{detail.title}}</h6>
+	
+	<table class="table">
+		<thead class="thead-inverse">
+			<tr>
+				<th *ngFor="let heading of detail.tableHeaders">{{heading}}</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr *ngFor="let dataRow of detail.tableDetails">
+				<td *ngFor="let data of dataRow">{{data}}</td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="overflowX">
+		<table *ngIf="detail.samples">
+			<tr>
+				<td *ngFor="let sample of detail.samples; let i = index">
+					<img [src]="sample" alt="Sample Screenshots" class="sampleImg" (click)="open(i)"/>
+				</td>
+			</tr>
+		</table>
+	</div>
+</div>
+</div>

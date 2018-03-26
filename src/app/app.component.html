@@ -1,0 +1,11 @@
+<app-dashboard [outlet]="o"></app-dashboard>
+<div id="body">
+  <div id="scrollableContent" class="container-fluid">
+    <router-outlet #o="outlet"></router-outlet>
+  </div>
+</div>
+<div id="footer">
+  <div id="quickLinks"></div>
+  <div id="currentLocation"></div>
+  <div id="contactDetails"></div>
+</div>

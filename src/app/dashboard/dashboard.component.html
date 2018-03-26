@@ -1,0 +1,90 @@
+<input type="text" style="display: none" [(ngModel)]="routerOutletState" value="{{getRouterOutletState(outlet)}}">
+<div id="header" class="container-fluid">
+  
+  <div id="introduction" class="transform" [class.introductionFixedHeight]="getRouterOutletState(outlet)">
+    <div id="bannerContainer" class="transform" [class.bannerSecondary]="getRouterOutletState(outlet)">
+      <div id="banner">
+        <img src="assets/JourneyToTheFuture.jpg" alt="Cover Picture" id="bannerImg" />
+      </div>
+      
+      <div id="profilePic" class="transform" [class.profilePicSecondary]="getRouterOutletState(outlet)">
+        <img src="assets/1962238_587957487962868_2088926499_o.jpg" alt="Profile Picture" id="profilePicImg" />
+      </div>
+    </div>
+    
+    <div class="transform logoHeading" [class.logoHeadingSecondary]="getRouterOutletState(outlet)">
+      <h1><a routerLink="/">Ramiz Mehran</a></h1>
+      <h4>Software Developer at Tata Consultancy Service Ltd.</h4>
+      <h5>Income Tax India e-Filing</h5>
+    </div>
+  </div>
+  
+  <div class="content" style="position: relative;padding-top: 0px">
+    <p [class.hidden]="getRouterOutletState(outlet)">A developer by heart and an innovator by soul. He likes to breathe life into his creations. Passionate and determined, always ready to give his best. He enjoys experimenting, and learning new things. With about 2 years of corporate experience, having worked both as an intern as well as an associate, he is continuously striving for new things. Space and stars always excite him, and interplanetory exploration is something he wishes to contribute to.</p>
+    
+    <div id="menu">
+      <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" id="navBarCollapseButton">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li *ngFor="let menu of menuList" class="nav-item" [class.active]="menu === selectedMenu">
+              <a class="nav-link" routerLink="/{{menu.value}}" routerLinkActive="active" onclick="if($('#navBarCollapseButton').css('display') !== 'none'){$('#navBarCollapseButton').click()}">{{menu.key}}</a>
+            </li>
+          </ul>
+          <!-- <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form> -->
+        </div>
+      </nav>
+    </div>
+  </div>
+</div>
+<div id="header" class="container-fluid" *ngIf="false">
+  <div id="bannerSecondary">
+    <img src="assets/JourneyToTheFuture.jpg" alt="Cover Picture" id="bannerImgSecondary" />
+  </div>
+  <div class="row profileHeadRow">
+    <div class="col-3"></div>
+    <div class="col-2">
+      <div id="profilePicSecondary">
+        <img src="assets/1962238_587957487962868_2088926499_o.jpg" alt="Profile Picture" id="profilePicImg" />
+      </div>
+    </div>
+    <div id="introductionSecondary" class="col-5">
+      <h1><a routerLink="/">Ramiz Mehran</a></h1>
+      <h4>Software Developer at Tata Consultancy Service Ltd.</h4>
+      <h5>Income Tax India e-Filing</h5>
+    </div>
+  </div>
+  <div id="menu">
+    <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" id="navBarCollapseButton">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li *ngFor="let menu of menuList" class="nav-item" [class.active]="menu === selectedMenu">
+            <a class="nav-link" routerLink="/{{menu.value}}" routerLinkActive="active" onclick="if($('#navBarCollapseButton').css('display') !== 'none'){$('#navBarCollapseButton').click()}">{{menu.key}}</a>
+          </li>
+        </ul>
+        <!-- <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form> -->
+      </div>
+    </nav>
+  </div>
+  <script>
+  $(document).ready(function() {
+    console.log('Initialising');
+    $('#profilePic').css("height", parseInt($('#banner').css("height")) * 0.4);
+    $('#profilePic').css("margin-top", -(parseInt($('#banner').css("height")) - (parseInt($('#profilePic').css("height")) * 0.9)));
+  });
+
+  img.css('marginTop', (parseInt(img.css('marginTop').substr(0, img.css('marginTop').length - 2)) - 10) + 'px');
+
+  </script>
+</div>

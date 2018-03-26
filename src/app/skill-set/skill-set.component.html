@@ -1,0 +1,27 @@
+<div class="container">
+<div *ngFor="let skillSetCategory of skillSetCategories">
+	<h6> {{skillSetCategory.title}}</h6>
+	
+	<table class="table">
+		<thead class="thead-inverse">
+			<tr>
+				<th *ngFor="let heading of skillSetCategory.tableHeaders">{{heading}}</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr *ngFor="let dataRow of skillSetCategory.tableDetails">
+				<td *ngFor="let data of dataRow">{{data}}</td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="overflowX">
+		<table *ngIf="skillSetCategory.samples">
+			<tr>
+				<td *ngFor="let sample of skillSetCategory.samples; let i = index">
+					<img [src]="sample" alt="Sample Screenshots" class="sampleImg" (click)="open(i)"/>
+				</td>
+			</tr>
+		</table>
+	</div>
+</div>
+</div>
